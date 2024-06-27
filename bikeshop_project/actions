@@ -1,0 +1,16 @@
+// post
+
+curl -X POST -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5NDk4NjU4LCJpYXQiOjE3MTk0OTgzNTgsImp0aSI6IjY4NTk0M2Y0YmQwZTQ4OWZiZWE0MjNjNmE4MWZhYTkxIiwidXNlcl9pZCI6M30.KfOtr9p0rYc2lPYor936f24vZ4AB-m9DYiybK6IZ3m4" -H "Content-Type: application/json" -d '{"name":"Mountain Bike", "price":500, "description":"A great mountain bike"}' http://127.0.0.1:8000/api/bikes/
+
+
+// get
+curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5NDk5MDQ4LCJpYXQiOjE3MTk0OTg3NDgsImp0aSI6IjY2ZjZhZGZiNGM3NTRiMjRhOWM1MTA5Zjg4NjI2Y2NlIiwidXNlcl9pZCI6M30.qiqtKeDjMl28EY2YVtGhvjy6XOxq9UDbX6Rd9FSXrn0" http://127.0.0.1:8000/api/bikes/
+
+
+// put
+
+curl -X PUT -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5NDk5ODA4LCJpYXQiOjE3MTk0OTg3NDgsImp0aSI6IjJmMWM1YjlhZGY3NzRiNDU5ODExNzJlOWRhMzQ5ZjlkIiwidXNlcl9pZCI6M30.uxbE3RTXsLOpsU7ULMn8Q5NER0KDIAqHPHnirOaOo2s" -H "Content-Type: application/json" -d '{"name":"Updated Mountain Bike", "price":600, "description":"An updated great mountain bike"}' http://127.0.0.1:8000/api/bikes/1/
+
+// delete 
+
+curl -X DELETE -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..." http://127.0.0.1:8000/api/bikes/1/
